@@ -12,6 +12,7 @@ class User(models.Model):
     date_of_birth = models.DateField()
     date_created = models.DateTimeField(auto_now_add=True)
     is_superhost = models.BooleanField(default=False)
+    rating = models.FloatField()
 
     def __str__(self):
         return self.username
